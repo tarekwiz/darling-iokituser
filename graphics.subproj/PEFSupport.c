@@ -23,11 +23,11 @@
 /*
     File:    UnpackPiData.c
     Written by:    Jeffrey Robbin
-    Copyright:    © 1994, 1996 by Apple Computer, Inc., all rights reserved.
+    Copyright:    ï¿½ 1994, 1996 by Apple Computer, Inc., all rights reserved.
 
     File:    GetSymbolFromPEF.c
     Written by:    Jeffrey Robbin
-    Copyright:    © 1994, 1996 by Apple Computer, Inc., all rights reserved.
+    Copyright:    ï¿½ 1994, 1996 by Apple Computer, Inc., all rights reserved.
 */
 
 #include <CoreFoundation/CoreFoundation.h>
@@ -48,7 +48,7 @@
 
 #include "GetSymbolFromPEF.h"
 #include <IOKit/graphics/IOGraphicsLib.h>
-#include "IOGraphicsLibPrivate.h"
+#include <IOKit/graphics/IOGraphicsLibPrivate.h>
 #include "IOGraphicsLibInternal.h"
 
 enum 

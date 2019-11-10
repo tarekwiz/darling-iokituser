@@ -23,7 +23,7 @@
 
 #if !TARGET_OS_EMBEDDED
 
-#include "IOPlatformSupportPrivate.h"
+#include <IOKit/platform/IOPlatformSupportPrivate.h>
 #include <IOKit/IOKitLib.h>
 #include <IOKit/pwr_mgt/IOPMLibPrivate.h>
 #include <sys/sysctl.h>

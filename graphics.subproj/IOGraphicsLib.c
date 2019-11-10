@@ -4859,7 +4859,7 @@ IOFBGetInterruptSemaphore( io_connect_t connect,
 
 #include <IOKit/graphics/IOGraphicsInterface.h>
 
-#ifndef NO_CFPLUGIN
+#ifdef NO_CFPLUGIN
 
 struct _BlitterVars {
     IOGraphicsAcceleratorInterface ** interface;
@@ -5403,7 +5403,7 @@ IOFBBurstWrite32( void * p1, void * p2, void * p3, void * p4, void * p5, void * 
 
 void
 IOFBSetBurstRef( void * burstRef )
-{ return ; }
+{ return; }
 
 kern_return_t
 IOFBCommitMemory( void * blitterRef, vm_address_t start, vm_size_t length, IOOptionBits options, void ** memoryRef, IOByteCount * offset )

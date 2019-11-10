@@ -47,8 +47,11 @@ set(iokit_sources
 	pwr_mgt.subproj/IOPMLibPrivate.c
 	${CMAKE_CURRENT_BINARY_DIR}/pwr_mgt.subproj/powermanagementUser.c
 	hidsystem.subproj/IOEventStatusAPI.c
-	graphics.subproj/IOAccelSurfaceControl.c
 	graphics.subproj/IOGraphicsLib.c
+	graphics.subproj/IOAccelSurfaceControl.c
+	graphics.subproj/IODisplayLib.c
+	graphics.subproj/PEFSupport.c
+	platform.subproj/IOPlatformSupport.c
 )
 
 add_framework(IOKit CURRENT_VERSION FAT
