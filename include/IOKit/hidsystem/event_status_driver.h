@@ -79,33 +79,33 @@ extern void NXResetMouse(NXEventHandle handle) __deprecated;
 * The following functions have been removed.
 *
 * NXIdleTime
-*     See CGEventSourceSecondsSinceLastEventType.
+* See CGEventSourceSecondsSinceLastEventType.
 *
 * NXSetKeyMapping
 * NXKeyMappingLength
 * NXGetKeyMapping
-*     These do not have a drop in replacement.  See UCKeyTranslate.
+* These do not have a drop in replacement. ÔøΩSee UCKeyTranslate.
 *
 * NXSetMouseScaling
-*     See IOHIDSetAccelerationWithKey and IOHIDSetMouseAcceleration.
+* See IOHIDSetAccelerationWithKey and IOHIDSetMouseAcceleration.
 *
 * NXGetMouseScaling
-*     See IOHIDGetAccelerationWithKey and IOHIDGetMouseAcceleration.
+* See IOHIDGetAccelerationWithKey and IOHIDGetMouseAcceleration.
 *
 * NXSetAutoDimThreshold
 * NXSetAutoDimState
-*     See IOPMSetAggressiveness and kPMMinutesToDim.
+* See IOPMSetAggressiveness and kPMMinutesToDim.
 *
 * NXAutoDimThreshold
 * NXAutoDimTime
 * NXAutoDimState
-*     See IOPMGetAggressiveness and kPMMinutesToDim.
+* See IOPMGetAggressiveness and kPMMinutesToDim.
 *
 * NXSetAutoDimBrightness
 * NXAutoDimBrightness
 * NXSetScreenBrightness
 * NXScreenBrightness
-*     This functionality is unsupported.
+* This functionality is unsupported.
 */
 
 __END_DECLS

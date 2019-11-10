@@ -35,7 +35,6 @@
 #include <mach/mach_time.h>
 #include <syslog.h>
 #include <asl.h>
-#include <msgtracer_keys.h>
 
 #include <CoreFoundation/CoreFoundation.h>
 
@@ -2345,6 +2344,7 @@ IOFBWritePrefs( IOFBConnectRef connectRef )
 static kern_return_t
 IOFBRebuild( IOFBConnectRef connectRef, Boolean forConnectChange )
 {
+    /*
     TIMESTART();
     
     if( kIOReturnSuccess != IOFBGetAttributeForFramebuffer( connectRef->connect, MACH_PORT_NULL,
@@ -2501,7 +2501,7 @@ IOFBRebuild( IOFBConnectRef connectRef, Boolean forConnectChange )
 	    asl_free(msg);
 	}
     }
-
+    */
 
     return( kIOReturnSuccess );
 }
@@ -5399,11 +5399,11 @@ IOFBSetupFIFOBurst( void * blitterRef, UInt32 x, UInt32 y, UInt32 w, UInt32 h, U
 
 void
 IOFBBurstWrite32( void * p1, void * p2, void * p3, void * p4, void * p5, void * p6, void * p7, void * p8 )
-{ return kIOReturnUnsupported; }
+{ return; }
 
 void
 IOFBSetBurstRef( void * burstRef )
-{ return kIOReturnUnsupported; }
+{ return ; }
 
 kern_return_t
 IOFBCommitMemory( void * blitterRef, vm_address_t start, vm_size_t length, IOOptionBits options, void ** memoryRef, IOByteCount * offset )
